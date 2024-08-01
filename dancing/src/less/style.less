@@ -1,0 +1,721 @@
+/* Fonts */
+@font-face{
+    font-family: 'Domine-Reg';
+    src: url('../fonts/Domine-Regular.eot');
+    src: url('../fonts/Domine-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Domine-Regular.woff2') format('woff2'),
+        url('../fonts/Domine-Regular.woff') format('woff'),
+        url('../fonts/Domine-Regular.ttf') format('truetype'),
+        url('../fonts/Domine-Regular.svg#Domine-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'Domine-Bold';
+    src: url('../fonts/Domine-Bold.eot');
+    src: url('../fonts/Domine-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Domine-Bold.woff2') format('woff2'),
+        url('../fonts/Domine-Bold.woff') format('woff'),
+        url('../fonts/Domine-Bold.ttf') format('truetype'),
+        url('../fonts/Domine-Bold.svg#Domine-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto-Light.eot');
+    src: url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Light.woff2') format('woff2'),
+        url('../fonts/Roboto-Light.woff') format('woff'),
+        url('../fonts/Roboto-Light.ttf') format('truetype'),
+        url('../fonts/Roboto-Light.svg#Roboto-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'Roboto-Reg';
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype'),
+        url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'Roboto-Thin';
+    src: url('../fonts/Roboto-Thin.eot');
+    src: url('../fonts/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Thin.woff2') format('woff2'),
+        url('../fonts/Roboto-Thin.woff') format('woff'),
+        url('../fonts/Roboto-Thin.ttf') format('truetype'),
+        url('../fonts/Roboto-Thin.svg#Roboto-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'Roboto-Med';
+    src: url('../fonts/Roboto-Medium.eot');
+    src: url('../fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Medium.woff2') format('woff2'),
+        url('../fonts/Roboto-Medium.woff') format('woff'),
+        url('../fonts/Roboto-Medium.ttf') format('truetype'),
+        url('../fonts/Roboto-Medium.svg#Roboto-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: 'Sacramento-Reg';
+    src: url('../fonts/Sacramento-Regular.eot');
+    src: url('../fonts/Sacramento-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Sacramento-Regular.woff2') format('woff2'),
+        url('../fonts/Sacramento-Regular.woff') format('woff'),
+        url('../fonts/Sacramento-Regular.ttf') format('truetype'),
+        url('../fonts/Sacramento-Regular.svg#Sacramento-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.d-reg(){
+    font-family: 'Domine-Reg', sans-serif;
+}
+.d-bold(){
+    font-family: 'Domine-Bold', sans-serif;
+}
+.r-light(){
+    font-family: 'Roboto-Light', serif;
+}
+.r-reg(){
+    font-family: 'Roboto-Reg', serif;
+}
+.r-thin(){
+    font-family: 'Roboto-Thin', serif;
+}
+.r-med(){
+    font-family: 'Roboto-Med', serif;
+}
+.s-reg(){
+    font-family: 'Sacramento-Reg', sans-serif;
+}
+
+/* Colors */
+@logo: #a2887a;
+@menu: #9e8179;
+@title: #a78f82;
+@subtitle: #9e8179;
+@btn: white;
+@bg: #e8e2e6;
+
+/* Micsin */
+.img(@w:57rem, @h:54rem, @img:'../img/rooms/img.png'){
+    width: @w;
+    height: @h;
+    background: url(@img) center no-repeat;
+    background-size: 100%;
+}
+.bg-vector(@b:-180px){
+        position: absolute;
+        bottom: @b;
+        z-index: 5;
+        .left(@l:0){
+            left: @l;
+        }
+        .right(@r:0){
+            right: @r;
+        }
+    }
+
+
+/* Basic settings */
+html{
+    font-size: 10px;
+}
+body{
+    .r-reg;
+}
+p, h1, h2, h3{
+    margin: 0;
+}
+.bttn{
+    display: block;
+    height: 49px;
+    width: 194px;
+    margin: 15px 0;
+    background-color: @menu;
+    border: none;
+    color: @btn;
+    .r-thin;
+    font-size: 3.3rem;
+    text-align: center;
+    line-height: 1;
+    &:hover{
+        background-color: darken(@menu, -10%);
+    }
+}
+.bttn-inverse{
+    height: 49px;
+    width: 194px;
+    background-color: @btn;
+    border: none;
+    color: @menu;
+    .r-thin;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1;
+    &:hover{
+        background-color: darken(@btn, 10%);
+    }
+}
+
+/* Main */
+.main{
+    &-header{
+        padding: 80px 0;
+        &-title{
+            white-space: nowrap;
+            text-align: center;
+            .s-reg;
+            font-size: 3rem;
+            color: @logo;
+            line-height: 0.5;
+            span{
+                .r-reg;
+                font-size: 1rem;
+                text-transform: uppercase;
+                color: @logo;
+            }
+        }
+    }
+    &-content{
+        padding-bottom: 110px;
+        &-title{
+            color: @title;
+            line-height: 0.8;
+            padding-top: 100px;
+            h1{
+                .d-reg;
+                font-size: 4.4rem;
+            }
+            h2{
+                .d-bold;
+                font-size: 5rem;
+                color: @menu;
+                line-height: 0.7;
+                span{
+                    .r-light;
+                    font-size: 2rem;
+                }
+            }
+            p{
+                .r-thin;
+                font-size: 4.4rem;
+            }
+        }
+        &-btn{
+            margin: 137px 0;
+        }
+        &-subtitle{
+            color: @subtitle;
+            h2{
+                .d-reg;
+                font-size: 3rem;
+                margin-bottom: 41px;
+            }
+            p{
+                .r-light;
+                font-size: 2.6rem;
+                line-height: 1;
+            }
+        }
+    }
+    &-img{
+        background: url(../img/main/main-img.png) right top no-repeat;
+        background-size: contain;
+    }
+    &-bg-vector1{
+        .bg-vector(620px);
+        .left;
+    }
+    &-bg-vector2{
+        .bg-vector(170px);
+        .right;
+    }
+}
+.container{
+    max-width: 1440px;
+    position: relative;
+    background-color: @bg;
+    padding: 0 70px;
+}
+.gradient1{
+    background: @bg url(../img/main/main-bg.png) center no-repeat;
+    background-size: cover;
+}
+.gradient2{
+    background: @bg url(../img/contact/Shadow.png) center no-repeat;
+    background-size: cover;
+}
+.toolbar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    a{
+        color: @menu;
+        margin-left: 2rem;
+        font-size: 2.5rem;
+        text-decoration: none;
+        &:hover{
+            color: darken(@menu, 10%);
+        }
+    }
+}
+
+/* Ballet classes available */
+.classes-1, .classes-2{
+        color: @btn;
+    h2{
+        .d-reg;
+        font-size: 3.7rem;
+        text-align: right;
+    }
+    p{
+        .r-thin;
+        font-size: 2rem;
+        text-align: justify;
+        padding: 70px 0 55px;
+    }
+    .container{
+        padding-bottom: 120px;
+    }
+}
+.note{
+    background-color: @menu;
+    padding: 70px 45px;
+}
+.button{
+    text-align: right;
+    button{
+        display: inline-block;
+    }
+}
+.classes-2{
+    h2, .button{
+        text-align: left;
+    }
+}
+
+/* Meet our instructors */
+.instructors{
+    color: @menu;
+    &-img{
+        background: url(../img/instructors/img.png) right top no-repeat;
+        background-size: contain;
+    }
+}
+.title{
+    .d-bold;
+    font-size: 4.7rem;
+    padding-top: 115px;
+    margin: 0;
+}
+.subtitle{
+    .r-light;
+    font-size: 2rem;
+}
+.txt{
+    .r-light;
+    font-size: 2rem;
+    padding: 60px 70px 0 0;
+    text-align: justify;
+}
+.social{
+    padding: 84px 0 260px;
+    a{
+        margin-right: 13px;
+    }
+}
+
+/* Book a meeting */
+.meeting{
+    &-note{
+        padding: 50px 40px;
+        background-color: @menu;
+        color: @btn;
+        .d-reg;
+        z-index: 10;
+        h3{
+            font-size: 3.7rem;
+            margin-bottom: 50px;
+        }
+        p{
+           .r-thin;
+           font-size: 2rem; 
+           text-align: justify;
+        }
+    }
+    &-footer{
+        position: relative;
+        margin: 70px 0 0;
+        p{
+            display: inline-block;
+            .d-reg;
+            font-size: 3rem;
+            vertical-align: middle;
+        }
+        img{
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 70px;
+        }
+    }
+    &-bg-vector1{
+        .bg-vector(-25px);
+        .left(490px);
+        z-index: 1;
+    }
+    .container{
+        padding-bottom: 155px;
+    }
+}
+
+/* "Rooms" */
+.rooms{
+    text-align: right;
+    color: @menu;
+    padding-right: 100px;
+    p{
+        .d-bold;
+        font-size: 4rem;
+        line-height: 1;
+        margin-bottom: 40px;
+        span{
+            .r-light;
+            font-size: 3rem;
+        }
+    }
+    h2{
+        .d-bold;
+        font-size: 5rem;
+        line-height: 0.7;
+        margin: 75px 0 30px;
+        span {
+            .r-light;
+            font-size: 2rem;
+        }
+    }
+    &-indent{
+        padding-bottom: 290px;
+    }
+    &-bttn{
+        display: inline-block;
+        padding-bottom: 175px;
+        .bttn{
+            margin: 0 0 40px;
+        }
+    }
+    &-img1{
+        background: url(../img/rooms/img.png) left top no-repeat;
+        background-size: contain;
+    }
+    &-img2{
+        background: url(../img/rooms/img2.png) left top no-repeat;
+        background-size: contain;
+    }
+    &-bg-vector1{
+        .bg-vector;
+        .left;
+    }
+    &-bg-vector2{
+        .bg-vector(-70px);
+        .right;
+    }
+    &-bg-vector3{
+        .bg-vector(430px);
+        .left;
+    }
+    &-bg-vector4{
+        .bg-vector(60px);
+        .right;
+    }
+}
+
+/* Perfomance is key */
+.perfomance{
+    .container{
+        padding-top: 40px;
+    }
+    &-title{
+        color: @menu;
+        padding-bottom: 50px;
+        h2{
+            .d-bold;
+            font-size: 5rem;
+            line-height: 0.7;
+            padding-top: 20px;
+            span{
+                .r-light;
+                font-size: 2rem;
+            }
+        }
+        p{
+            .r-light;
+            font-size: 2rem;
+            line-height: 1;
+            margin: 60px 0 85px;
+            text-align: justify;
+        }
+    }
+    &-logo{
+        text-align: center;
+        color: @logo;
+        line-height: 0.5;
+        p{
+            .s-reg;
+            font-size: 9rem;
+            padding: 390px 0 90px;
+            span{
+                .r-reg;
+                font-size: 2.8rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+    &-img1{
+        background: url(../img/perfomance/img1.png) right no-repeat;
+        background-size: contain;
+    }
+    &-img2{
+        background: url(../img/perfomance/img2.png) left no-repeat;
+        background-size: contain;
+        z-index: 10;
+    }
+    &-bg-vector1{
+        .bg-vector(150px);
+        .left(250px);
+    }
+    &-bg-vector2{
+        .bg-vector(250px);
+        .right;
+    }
+}
+
+/* Contact us */
+.contact{
+    color: @menu;
+    h2{
+        .d-reg;
+        font-size: 6rem;
+        margin-bottom: 100px;
+    }
+    p{
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    .before{
+        content: '';
+        display: inline-block;
+        width: 41px;
+        height: 41px;
+        vertical-align: middle;
+        margin-right: 30px;
+    }
+    &-indent{
+        padding-bottom: 100px;
+    }
+    &-phone:before{
+        .before;
+        background: url(../img/contact/Phone.png) center no-repeat;
+        background-size: contain;
+    }
+    &-mail:before{
+        .before;
+        background: url(../img/contact/Email.png) center no-repeat;
+        background-size: contain;
+    }
+    &-address:before{
+        .before;
+        background: url(../img/contact/Location.png) center no-repeat;
+        background-size: contain;
+    }
+    &-map{
+        position: relative;
+        background: url(../img/contact/map.png) center no-repeat;
+        background-size: contain;
+        &:before{
+            position: absolute;
+            content: '';
+            width: 27px;
+            height: 38px;
+            top: 130px;
+            right: 160px;
+            background: url(../img/contact/Location.png);
+            background-size: 100%;
+        }
+    }
+    &-bg-vector{
+        .bg-vector(150px);
+        .left;
+    }
+}
+.footer{
+    &-social{
+        a{
+            margin-right: 10px;
+           img{
+            width: 26px;
+            height: 26px;
+            } 
+        }
+    }
+    &-indent{
+        padding: 115px 0;
+    }
+}
+
+
+@media(max-width: 991px){
+    .logo{
+        padding-bottom: 50px;
+    }
+    .main-content-title{
+        padding-top: 50px;
+    }
+    .main-content-btn{
+        margin: 50px 0;
+    }
+    .classes-1{
+        h2{
+            margin-top: 50px;
+            text-align: center;
+        }
+    }
+    .instructors{
+        .title{
+            padding: 0;
+        }
+        .social{
+            padding-bottom: 50px;
+        }
+    }
+    .meeting{
+        &-note{
+            margin-bottom: 20px;
+        }
+        .container{
+            padding-bottom: 50px;
+        }
+    }
+    .rooms{
+        &-indent{
+            padding-bottom: 50px;
+        }
+        h2{
+            margin-top: 0;
+        }
+        &-bttn{
+            padding-bottom: 50px;
+        }
+        &-bg-vector2{
+            display: none;
+        }
+    }
+    .classes-2{
+        h2{
+            text-align: center;
+        }
+        .button{
+            margin-bottom: 50px;
+        }
+    }
+    .perfomance{
+        &-bg-vector1, &-bg-vector2{
+            display: none;
+        }
+        &-logo{
+            p{
+                padding-top: 50px;
+            }
+        }
+    }
+    .footer{
+        &-indent{
+            padding-top: 0;
+        }
+        &-social{
+            text-align: center;
+            margin: 50px 0;
+        }
+    }
+}
+@media(max-width: 576px){
+    [class*="bg-vector"]{
+        display: none;
+    }
+    .main{
+        &-header{
+            padding-bottom: 0;
+        }
+    }
+    .display-n{
+        display: none;
+    }
+    .classes-1{
+        h2{
+            margin-top: 0;
+        }
+    }
+    .rooms{
+        h2{
+            line-height: 1;
+        }
+    }
+    .perfomance{
+        &-logo{
+            .display-n;
+        }
+        &-title{
+            h2{
+                line-height: 1;
+            }
+        }
+    }
+    .contact{
+        &-indent{
+            padding: 0;
+        }
+        &-map{
+            .display-n;
+        }
+    }
+    .footer{
+        &-social{
+            text-align: left;
+            a{
+                img{
+                    width: 41px;
+                    height: 41px;
+                    margin-right: 20px;
+                }
+            }
+        }
+        &-indent{
+            padding: 0;
+        }
+    }
+    .toolbar{
+        flex-direction: column;
+        a{
+            margin-bottom: 10px;
+        }
+    }
+}

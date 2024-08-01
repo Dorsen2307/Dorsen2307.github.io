@@ -1,0 +1,646 @@
+/* Fonts */
+@font-face {
+  font-family: 'Domine-Reg';
+  src: url('../fonts/Domine-Regular.eot');
+  src: url('../fonts/Domine-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Domine-Regular.woff2') format('woff2'), url('../fonts/Domine-Regular.woff') format('woff'), url('../fonts/Domine-Regular.ttf') format('truetype'), url('../fonts/Domine-Regular.svg#Domine-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Domine-Bold';
+  src: url('../fonts/Domine-Bold.eot');
+  src: url('../fonts/Domine-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Domine-Bold.woff2') format('woff2'), url('../fonts/Domine-Bold.woff') format('woff'), url('../fonts/Domine-Bold.ttf') format('truetype'), url('../fonts/Domine-Bold.svg#Domine-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('../fonts/Roboto-Light.eot');
+  src: url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Light.woff2') format('woff2'), url('../fonts/Roboto-Light.woff') format('woff'), url('../fonts/Roboto-Light.ttf') format('truetype'), url('../fonts/Roboto-Light.svg#Roboto-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto-Reg';
+  src: url('../fonts/Roboto-Regular.eot');
+  src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Regular.woff2') format('woff2'), url('../fonts/Roboto-Regular.woff') format('woff'), url('../fonts/Roboto-Regular.ttf') format('truetype'), url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto-Thin';
+  src: url('../fonts/Roboto-Thin.eot');
+  src: url('../fonts/Roboto-Thin.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Thin.woff2') format('woff2'), url('../fonts/Roboto-Thin.woff') format('woff'), url('../fonts/Roboto-Thin.ttf') format('truetype'), url('../fonts/Roboto-Thin.svg#Roboto-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto-Med';
+  src: url('../fonts/Roboto-Medium.eot');
+  src: url('../fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/Roboto-Medium.woff2') format('woff2'), url('../fonts/Roboto-Medium.woff') format('woff'), url('../fonts/Roboto-Medium.ttf') format('truetype'), url('../fonts/Roboto-Medium.svg#Roboto-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sacramento-Reg';
+  src: url('../fonts/Sacramento-Regular.eot');
+  src: url('../fonts/Sacramento-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Sacramento-Regular.woff2') format('woff2'), url('../fonts/Sacramento-Regular.woff') format('woff'), url('../fonts/Sacramento-Regular.ttf') format('truetype'), url('../fonts/Sacramento-Regular.svg#Sacramento-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* Colors */
+/* Micsin */
+/* Basic settings */
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Roboto-Reg', serif;
+}
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+.bttn {
+  display: block;
+  height: 49px;
+  width: 194px;
+  margin: 15px 0;
+  background-color: #9e8179;
+  border: none;
+  color: #ffffff;
+  font-family: 'Roboto-Thin', serif;
+  font-size: 3.3rem;
+  text-align: center;
+  line-height: 1;
+}
+.bttn:hover {
+  background-color: #b39d97;
+}
+.bttn-inverse {
+  height: 49px;
+  width: 194px;
+  background-color: #ffffff;
+  border: none;
+  color: #9e8179;
+  font-family: 'Roboto-Thin', serif;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1;
+}
+.bttn-inverse:hover {
+  background-color: #e6e6e6;
+}
+/* Main */
+.main-header {
+  padding: 80px 0;
+}
+.main-header-title {
+  white-space: nowrap;
+  text-align: center;
+  font-family: 'Sacramento-Reg', sans-serif;
+  font-size: 3rem;
+  color: #a2887a;
+  line-height: 0.5;
+}
+.main-header-title span {
+  font-family: 'Roboto-Reg', serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #a2887a;
+}
+.main-content {
+  padding-bottom: 110px;
+}
+.main-content-title {
+  color: #a78f82;
+  line-height: 0.8;
+  padding-top: 100px;
+}
+.main-content-title h1 {
+  font-family: 'Domine-Reg', sans-serif;
+  font-size: 4.4rem;
+}
+.main-content-title h2 {
+  font-family: 'Domine-Bold', sans-serif;
+  font-size: 5rem;
+  color: #9e8179;
+  line-height: 0.7;
+}
+.main-content-title h2 span {
+  font-family: 'Roboto-Light', serif;
+  font-size: 2rem;
+}
+.main-content-title p {
+  font-family: 'Roboto-Thin', serif;
+  font-size: 4.4rem;
+}
+.main-content-btn {
+  margin: 137px 0;
+}
+.main-content-subtitle {
+  color: #9e8179;
+}
+.main-content-subtitle h2 {
+  font-family: 'Domine-Reg', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 41px;
+}
+.main-content-subtitle p {
+  font-family: 'Roboto-Light', serif;
+  font-size: 2.6rem;
+  line-height: 1;
+}
+.main-img {
+  background: url(../img/main/main-img.png) right top no-repeat;
+  background-size: contain;
+}
+.main-bg-vector1 {
+  position: absolute;
+  bottom: 620px;
+  z-index: 5;
+  left: 0;
+}
+.main-bg-vector2 {
+  position: absolute;
+  bottom: 170px;
+  z-index: 5;
+  right: 0;
+}
+.container {
+  max-width: 1440px;
+  position: relative;
+  background-color: #e8e2e6;
+  padding: 0 70px;
+}
+.gradient1 {
+  background: #e8e2e6 url(../img/main/main-bg.png) center no-repeat;
+  background-size: cover;
+}
+.gradient2 {
+  background: #e8e2e6 url(../img/contact/Shadow.png) center no-repeat;
+  background-size: cover;
+}
+.toolbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.toolbar a {
+  color: #9e8179;
+  margin-left: 2rem;
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+.toolbar a:hover {
+  color: #846860;
+}
+/* Ballet classes available */
+.classes-1,
+.classes-2 {
+  color: #ffffff;
+}
+.classes-1 h2,
+.classes-2 h2 {
+  font-family: 'Domine-Reg', sans-serif;
+  font-size: 3.7rem;
+  text-align: right;
+}
+.classes-1 p,
+.classes-2 p {
+  font-family: 'Roboto-Thin', serif;
+  font-size: 2rem;
+  text-align: justify;
+  padding: 70px 0 55px;
+}
+.classes-1 .container,
+.classes-2 .container {
+  padding-bottom: 120px;
+}
+.note {
+  background-color: #9e8179;
+  padding: 70px 45px;
+}
+.button {
+  text-align: right;
+}
+.button button {
+  display: inline-block;
+}
+.classes-2 h2,
+.classes-2 .button {
+  text-align: left;
+}
+/* Meet our instructors */
+.instructors {
+  color: #9e8179;
+}
+.instructors-img {
+  background: url(../img/instructors/img.png) right top no-repeat;
+  background-size: contain;
+}
+.title {
+  font-family: 'Domine-Bold', sans-serif;
+  font-size: 4.7rem;
+  padding-top: 115px;
+  margin: 0;
+}
+.subtitle {
+  font-family: 'Roboto-Light', serif;
+  font-size: 2rem;
+}
+.txt {
+  font-family: 'Roboto-Light', serif;
+  font-size: 2rem;
+  padding: 60px 70px 0 0;
+  text-align: justify;
+}
+.social {
+  padding: 84px 0 260px;
+}
+.social a {
+  margin-right: 13px;
+}
+/* Book a meeting */
+.meeting-note {
+  padding: 50px 40px;
+  background-color: #9e8179;
+  color: #ffffff;
+  font-family: 'Domine-Reg', sans-serif;
+  z-index: 10;
+}
+.meeting-note h3 {
+  font-size: 3.7rem;
+  margin-bottom: 50px;
+}
+.meeting-note p {
+  font-family: 'Roboto-Thin', serif;
+  font-size: 2rem;
+  text-align: justify;
+}
+.meeting-footer {
+  position: relative;
+  margin: 70px 0 0;
+}
+.meeting-footer p {
+  display: inline-block;
+  font-family: 'Domine-Reg', sans-serif;
+  font-size: 3rem;
+  vertical-align: middle;
+}
+.meeting-footer img {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 70px;
+}
+.meeting-bg-vector1 {
+  position: absolute;
+  bottom: -25px;
+  z-index: 5;
+  left: 490px;
+  z-index: 1;
+}
+.meeting .container {
+  padding-bottom: 155px;
+}
+/* "Rooms" */
+.rooms {
+  text-align: right;
+  color: #9e8179;
+  padding-right: 100px;
+}
+.rooms p {
+  font-family: 'Domine-Bold', sans-serif;
+  font-size: 4rem;
+  line-height: 1;
+  margin-bottom: 40px;
+}
+.rooms p span {
+  font-family: 'Roboto-Light', serif;
+  font-size: 3rem;
+}
+.rooms h2 {
+  font-family: 'Domine-Bold', sans-serif;
+  font-size: 5rem;
+  line-height: 0.7;
+  margin: 75px 0 30px;
+}
+.rooms h2 span {
+  font-family: 'Roboto-Light', serif;
+  font-size: 2rem;
+}
+.rooms-indent {
+  padding-bottom: 290px;
+}
+.rooms-bttn {
+  display: inline-block;
+  padding-bottom: 175px;
+}
+.rooms-bttn .bttn {
+  margin: 0 0 40px;
+}
+.rooms-img1 {
+  background: url(../img/rooms/img.png) left top no-repeat;
+  background-size: contain;
+}
+.rooms-img2 {
+  background: url(../img/rooms/img2.png) left top no-repeat;
+  background-size: contain;
+}
+.rooms-bg-vector1 {
+  position: absolute;
+  bottom: -180px;
+  z-index: 5;
+  left: 0;
+}
+.rooms-bg-vector2 {
+  position: absolute;
+  bottom: -70px;
+  z-index: 5;
+  right: 0;
+}
+.rooms-bg-vector3 {
+  position: absolute;
+  bottom: 430px;
+  z-index: 5;
+  left: 0;
+}
+.rooms-bg-vector4 {
+  position: absolute;
+  bottom: 60px;
+  z-index: 5;
+  right: 0;
+}
+/* Perfomance is key */
+.perfomance .container {
+  padding-top: 40px;
+}
+.perfomance-title {
+  color: #9e8179;
+  padding-bottom: 50px;
+}
+.perfomance-title h2 {
+  font-family: 'Domine-Bold', sans-serif;
+  font-size: 5rem;
+  line-height: 0.7;
+  padding-top: 20px;
+}
+.perfomance-title h2 span {
+  font-family: 'Roboto-Light', serif;
+  font-size: 2rem;
+}
+.perfomance-title p {
+  font-family: 'Roboto-Light', serif;
+  font-size: 2rem;
+  line-height: 1;
+  margin: 60px 0 85px;
+  text-align: justify;
+}
+.perfomance-logo {
+  text-align: center;
+  color: #a2887a;
+  line-height: 0.5;
+}
+.perfomance-logo p {
+  font-family: 'Sacramento-Reg', sans-serif;
+  font-size: 9rem;
+  padding: 390px 0 90px;
+}
+.perfomance-logo p span {
+  font-family: 'Roboto-Reg', serif;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+}
+.perfomance-img1 {
+  background: url(../img/perfomance/img1.png) right no-repeat;
+  background-size: contain;
+}
+.perfomance-img2 {
+  background: url(../img/perfomance/img2.png) left no-repeat;
+  background-size: contain;
+  z-index: 10;
+}
+.perfomance-bg-vector1 {
+  position: absolute;
+  bottom: 150px;
+  z-index: 5;
+  left: 250px;
+}
+.perfomance-bg-vector2 {
+  position: absolute;
+  bottom: 250px;
+  z-index: 5;
+  right: 0;
+}
+/* Contact us */
+.contact {
+  color: #9e8179;
+}
+.contact h2 {
+  font-family: 'Domine-Reg', sans-serif;
+  font-size: 6rem;
+  margin-bottom: 100px;
+}
+.contact p {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.contact .before {
+  content: '';
+  display: inline-block;
+  width: 41px;
+  height: 41px;
+  vertical-align: middle;
+  margin-right: 30px;
+}
+.contact-indent {
+  padding-bottom: 100px;
+}
+.contact-phone:before {
+  content: '';
+  display: inline-block;
+  width: 41px;
+  height: 41px;
+  vertical-align: middle;
+  margin-right: 30px;
+  background: url(../img/contact/Phone.png) center no-repeat;
+  background-size: contain;
+}
+.contact-mail:before {
+  content: '';
+  display: inline-block;
+  width: 41px;
+  height: 41px;
+  vertical-align: middle;
+  margin-right: 30px;
+  background: url(../img/contact/Email.png) center no-repeat;
+  background-size: contain;
+}
+.contact-address:before {
+  content: '';
+  display: inline-block;
+  width: 41px;
+  height: 41px;
+  vertical-align: middle;
+  margin-right: 30px;
+  background: url(../img/contact/Location.png) center no-repeat;
+  background-size: contain;
+}
+.contact-map {
+  position: relative;
+  background: url(../img/contact/map.png) center no-repeat;
+  background-size: contain;
+}
+.contact-map:before {
+  position: absolute;
+  content: '';
+  width: 27px;
+  height: 38px;
+  top: 130px;
+  right: 160px;
+  background: url(../img/contact/Location.png);
+  background-size: 100%;
+}
+.contact-bg-vector {
+  position: absolute;
+  bottom: 150px;
+  z-index: 5;
+  left: 0;
+}
+.footer-social a {
+  margin-right: 10px;
+}
+.footer-social a img {
+  width: 26px;
+  height: 26px;
+}
+.footer-indent {
+  padding: 115px 0;
+}
+@media (max-width: 991px) {
+  .logo {
+    padding-bottom: 50px;
+  }
+  .main-content-title {
+    padding-top: 50px;
+  }
+  .main-content-btn {
+    margin: 50px 0;
+  }
+  .classes-1 h2 {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .instructors .title {
+    padding: 0;
+  }
+  .instructors .social {
+    padding-bottom: 50px;
+  }
+  .meeting-note {
+    margin-bottom: 20px;
+  }
+  .meeting .container {
+    padding-bottom: 50px;
+  }
+  .rooms-indent {
+    padding-bottom: 50px;
+  }
+  .rooms h2 {
+    margin-top: 0;
+  }
+  .rooms-bttn {
+    padding-bottom: 50px;
+  }
+  .rooms-bg-vector2 {
+    display: none;
+  }
+  .classes-2 h2 {
+    text-align: center;
+  }
+  .classes-2 .button {
+    margin-bottom: 50px;
+  }
+  .perfomance-bg-vector1,
+  .perfomance-bg-vector2 {
+    display: none;
+  }
+  .perfomance-logo p {
+    padding-top: 50px;
+  }
+  .footer-indent {
+    padding-top: 0;
+  }
+  .footer-social {
+    text-align: center;
+    margin: 50px 0;
+  }
+}
+@media (max-width: 576px) {
+  [class*="bg-vector"] {
+    display: none;
+  }
+  .main-header {
+    padding-bottom: 0;
+  }
+  .display-n {
+    display: none;
+  }
+  .classes-1 h2 {
+    margin-top: 0;
+  }
+  .rooms h2 {
+    line-height: 1;
+  }
+  .perfomance-logo {
+    display: none;
+  }
+  .perfomance-title h2 {
+    line-height: 1;
+  }
+  .contact-indent {
+    padding: 0;
+  }
+  .contact-map {
+    display: none;
+  }
+  .footer-social {
+    text-align: left;
+  }
+  .footer-social a img {
+    width: 41px;
+    height: 41px;
+    margin-right: 20px;
+  }
+  .footer-indent {
+    padding: 0;
+  }
+  .toolbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .toolbar a {
+    margin-bottom: 10px;
+  }
+}
