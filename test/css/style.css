@@ -193,6 +193,9 @@ p {
   padding: 20px 0;
   border-bottom: 1px solid #7d7d7d;
 }
+.home-header-top .algn {
+  margin: auto 0;
+}
 .home-header-top .message {
   text-align: right;
 }
