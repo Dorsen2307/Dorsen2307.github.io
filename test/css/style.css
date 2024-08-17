@@ -82,6 +82,9 @@ p {
   font-family: 'Helvetica-Bold', serif;
   font-size: 1.6rem;
 }
+.btn:hover {
+  background-color: #e00c00;
+}
 .menu {
   line-height: 4;
   font-family: 'Gilroy-Med', serif;
