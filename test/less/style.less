@@ -1,0 +1,528 @@
+/* Fonts */
+@font-face {
+    font-family: 'Gilroy-Med';
+    src: url('../fonts/Gilroy-Medium.eot');
+    src: url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+        url('../fonts/Gilroy-Medium.woff') format('woff'),
+        url('../fonts/Gilroy-Medium.ttf') format('truetype'),
+        url('../fonts/Gilroy-Medium.svg#Gilroy-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Helvetica-Bold';
+    src: url('../fonts/HelveticaNeueBoldCondensed.eot');
+    src: url('../fonts/HelveticaNeueBoldCondensed.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueBoldCondensed.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueBoldCondensed.woff') format('woff'),
+        url('../fonts/HelveticaNeueBoldCondensed.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueBoldCondensed.svg#HelveticaNeueBoldCondensed') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica-Black';
+    src: url('../fonts/HelveticaNeueBlackCondensed.eot');
+    src: url('../fonts/HelveticaNeueBlackCondensed.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueBlackCondensed.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueBlackCondensed.woff') format('woff'),
+        url('../fonts/HelveticaNeueBlackCondensed.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueBlackCondensed.svg#HelveticaNeueBlackCondensed') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Gilroy-Reg';
+    src: url('../fonts/Gilroy-Regular.eot');
+    src: url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('../fonts/Gilroy-Regular.woff') format('woff'),
+        url('../fonts/Gilroy-Regular.ttf') format('truetype'),
+        url('../fonts/Gilroy-Regular.svg#Gilroy-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gilroy-EBold';
+    src: url('../fonts/Gilroy-Extrabold.eot');
+    src: url('../fonts/Gilroy-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gilroy-Extrabold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Extrabold.woff') format('woff'),
+        url('../fonts/Gilroy-Extrabold.ttf') format('truetype'),
+        url('../fonts/Gilroy-Extrabold.svg#Gilroy-Extrabold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'HelveticaNeueCyr-Light';
+    src: url('../fonts/HelveticaNeueCyr-Light.eot');
+    src: url('../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Light.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Light.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueCyr-Light.svg#HelveticaNeueCyr-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'HelveticaNeueCyr-Med';
+    src: url('../fonts/HelveticaNeueCyr-Medium.eot');
+    src: url('../fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
+        url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype'),
+        url('../fonts/HelveticaNeueCyr-Medium.svg#HelveticaNeueCyr-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+
+
+.g-reg() {
+	font-family: 'Gilroy-Reg', serif;
+}
+.g-med() {
+	font-family: 'Gilroy-Med', serif;
+}
+.g-ebold() {
+	font-family: 'Gilroy-EBold', serif;
+}
+.h-bold() {
+	font-family: 'Helvetica-Bold', serif;
+}
+.h-black() {
+	font-family: 'Helvetica-Black', serif;
+}
+.h-light() {
+	font-family: 'HelveticaNeueCyr-Light', serif;
+}
+.h-med() {
+	font-family: 'HelveticaNeueCyr-Med', serif;
+}
+
+/* Colors */
+@body: #f5f5f5;
+@bg-home: #323232;
+@line: #7d7d7d;
+@txt-header: #c8c8c8;
+@txt-header--home: #FF5147;
+@txt-logo: #ebebeb;
+@txt-h1: white;
+@point-item: #FF5147;
+@txt-img: #e1e1e1;
+@txt-number: #b1b1b1;
+@txt-submenu: #4b4b4b;
+
+/* Basic settings */
+body {
+	background-color: @body;
+}
+html {
+	font-size: 10px;
+}
+p {
+	padding: 0;
+	margin: 0;
+}
+.home, .footer, .content {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+.btn {
+	width: 200px;
+	height: 45px;
+	background-color: @point-item;
+	color: @txt-h1;
+	border-radius: 5%;
+	.h-bold;
+	font-size: 1.6rem;
+}
+.menu {
+	line-height: 4;
+	.g-med;
+	li.item {
+		position: relative;
+		list-style: none;
+		&:first-child a {
+			color: @txt-header--home;
+		}
+		&:not(:last-child):after {
+			content: '';
+			display: inline-block;
+			width: 6px;
+			height: 6px;
+			background-color: @point-item;
+			border-radius: 50%;
+			margin-left: 20px;
+			margin-bottom: 2px;
+		}
+		&:nth-child(3):after {
+			content: '';
+			display: inline-block;
+			width: 10px;
+			height: 8px;
+			background: url(../img/home/chevron-down-solid.png) center no-repeat;
+			background-size: cover;
+		}
+		&:nth-child(3):hover > ul {
+			display: block;
+		}
+		ul {
+			display: none;
+			position: absolute;
+			top: 50px;
+			background-color: @txt-h1;
+			padding: 10px 20px;
+			border-radius: 5px;
+			li {
+				line-height: 2;
+				list-style: none;
+				a {
+					color: @txt-submenu;
+				}
+			}
+
+		}
+		a {
+			text-transform: uppercase;
+			white-space: nowrap;
+			font-size: 1.4rem;
+		}
+	}
+}
+.img-align {
+	margin: auto 0;
+}
+/* Стили для модального окна */
+.modal {
+  display: none;
+  /* По умолчанию скрыто */
+  position: fixed;
+  /* Фиксированное положение */
+  z-index: 5;
+  /* Верхний уровень */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Полная ширина */
+  height: 100%;
+  /* Полная высота */
+  overflow: auto;
+  /* Включить прокрутку, если необходимо */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Черный цвет с прозрачностью */
+	&-content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	  margin: auto;
+	  display: block;
+	  width: 30%;
+	  max-width: 700px;
+	}
+	&-content img {
+	    width: 100%;
+	    height: auto;
+	}
+}
+
+       
+
+
+/* Home */
+.home {
+	background: url(../img/home/bgHome.png) center no-repeat;
+	background-size: cover;
+	color: @txt-h1;
+	&-header {
+		.g-reg;
+		font-size: 1.4rem;
+		color: @txt-header;
+		a {
+			color: @txt-header;
+			text-decoration: none;
+		}
+		&-top {
+			padding: 20px 0;
+			border-bottom: 1px solid @line;
+			.message {
+				text-align: right;
+				a {
+					margin-left: 20px;
+				}
+			}
+			.tel {
+				.h-bold;
+				font-size: 1.8rem;
+			}
+		}
+		p {
+			display: inline-block;
+			vertical-align: middle;
+			padding-left: 10px;
+		}
+		&-logo {
+			.g-ebold;
+			color: @txt-logo;	
+			p {
+				font-size: 2rem;
+				line-height: 1.2;
+			}
+			span {
+				.h-light;
+				font-size: 1.2rem;
+			}
+		}
+		// &-bottom {
+			
+		// }
+	}
+	&-content {
+		h1 {
+			margin: 50px 0;
+			.h-black;
+			font-size: 4.8rem;
+			text-transform: uppercase;
+		}
+		p {
+			color: @txt-logo;
+			font-size: 2.4rem;
+			line-height: 1.35;
+			.g-reg;
+			margin-bottom: 30px;
+		}
+		button {
+			margin-bottom: 130px;
+		}
+	}
+}
+.content {
+	padding: 100px 0;
+	background-color: @txt-h1;
+	.watermark {
+		position: relative;
+		img:nth-child(2) {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		img:nth-child(3) {
+			position: absolute;
+			content: '';
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: -1;
+			background: url(../img/content/magnifying-glass.png) center no-repeat;
+		}
+		&:hover > img:nth-child(3) {
+			z-index: 2;
+		}
+	}
+	.img {
+		position: relative;
+		margin: 20px 0;
+		img {
+			border-radius: 10px;
+			&:first-child {
+				width: 100%;
+			}
+		}
+		&-bottom {
+			padding-top: 15px;
+			p:first-child {
+				.h-med;
+				color: @bg-home;
+				font-size: 2rem;
+			}
+			p:last-child {
+				.h-med;
+				a {
+					font-size: 1.6rem;
+					color: @point-item;
+					text-decoration: none;
+				}
+			}
+
+		}
+		&-footer {
+			width: 100% - 10px;
+			position: absolute;
+			bottom: 20px;
+			left: 30px;
+			p {
+				.h-bold;
+				font-size: 2rem;
+				color: @txt-img;
+			}
+		}
+	}
+	.carousel-control-prev-icon {
+		background-image: url(../img/content/Prev.png);
+		height: 40px;
+	}
+	.carousel-control-next-icon {
+		background-image: url(../img/content/Next.png);
+		height: 40px;
+	}
+	.process {
+		color: @bg-home;
+		margin: 50px 0;
+		.header {
+			padding: 0 0 20px 20px;
+			img {
+				margin-right: 70px;
+			}
+		}
+		h4 {
+			.h-bold();
+			font-size: 2.1rem;
+			margin-bottom: 10px;
+		}
+		p {
+			font-size: 2rem;
+			.h-light;
+			min-height: 250px;
+		}
+	}
+}
+.footer {
+	background: url(../img/footer/bg-footer.png) center no-repeat;
+	background-size: cover;
+	padding: 70px 0 0;
+	p {
+		font-size: 2rem;
+		display: inline-block;
+		vertical-align: middle;
+		padding-left: 10px;
+		line-height: 1.2;
+	}
+	a {
+			color: @txt-header;
+			text-decoration: none;
+		}
+	.tel {
+			.h-bold;
+			font-size: 1.7rem;
+		}
+	&-logo {
+		.g-ebold;
+		color: @txt-logo;	
+		span {
+			.h-light;
+			font-size: 1.2rem;
+		}
+	}
+	&-phone {
+		line-height: 5;
+		text-align: right;
+	}
+	&-contact {
+		.g-reg;
+		color: @txt-header;
+		padding: 30px 0 60px;
+		p {
+			font-size: 1.4rem;
+		}
+	}
+	&-bottom {
+		border-top: 1px solid @line;
+		margin-top: 70px;
+		text-align: center;
+		p {
+			line-height: 4;
+			color: @txt-h1;
+		}
+	}
+}
+
+/* Media */
+@media(max-width: 1400px) {
+	.home {
+		&-header {
+			font-size: 1.2rem;
+			&-top {
+				.tel {
+					font-size: 1.6rem;
+				}
+			}
+		}
+	}
+	.footer {
+		&-contact {
+			a {
+				font-size: 1.2rem;			
+			}
+		}
+	}
+}
+@media(max-width: 1200px) {
+	.home {
+		&-header {
+			&-logo {
+				text-align: center;
+			}
+			.message {
+				display: none;
+			}			
+		}
+	}
+	.content {
+		.process {
+			p {
+				min-height: 150px;
+			}
+		}
+	}
+	.footer {
+		&-logo {
+			display: none;
+		}
+	}
+}
+@media(max-width: 991px) {
+	.home {
+		&-header {
+			&-top {
+				display: none;
+			}
+		}
+	}
+	.footer {
+		&-contact {
+			p {
+				margin: 10px 0;
+			}
+		}
+	}
+}
+@media(max-width: 766px) {
+	.menu {
+		li.item {
+			&:not(:last-child):after {
+				content: none;
+			}
+		}
+	}
+	.footer {
+		.tel {
+			
+		}
+	}
+}
